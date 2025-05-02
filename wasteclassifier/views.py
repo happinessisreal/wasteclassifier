@@ -57,7 +57,7 @@ def analyze_waste(request):
 
                 # Select the Gemini model (use a vision-capable model)
                 # gemini-1.5-flash is a good choice for speed and capability
-                model = genai.GenerativeModel('gemini-1.5-flash')
+                model = genai.GenerativeModel('gemini-2.0-flash')
 
                 # Send prompt with image and text
                 response = model.generate_content([prompt_text, image_part])
