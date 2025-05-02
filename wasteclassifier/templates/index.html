@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Waste Classifier{% endblock %}
+
+{% block content %}
+<h2>Welcome to the Waste Classifier!</h2>
+<p>Use your webcam to analyze waste.</p>
+<!-- Webcam and analysis elements will go here -->
+<div id="webcam-container">
+    <video id="webcam" width="640" height="480" autoplay></video>
+    <button id="capture-btn">Capture Image</button>
+    <canvas id="canvas" width="640" height="480" style="display:none;"></canvas>
+    <img id="captured-image" src="#" alt="Captured Image" style="display:none; max-width: 640px;">
+</div>
+<div id="results">
+    <h3>Analysis Results:</h3>
+    <p id="classification"></p>
+    <p id="details"></p>
+</div>
+{% endblock %}

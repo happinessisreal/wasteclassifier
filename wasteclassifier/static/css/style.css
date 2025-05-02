@@ -1,0 +1,61 @@
+/* Basic styling */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 1rem;
+    text-align: center;
+    margin-top: auto;
+}
+
+#webcam-container {
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#capture-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#capture-btn:hover {
+    background-color: #0056b3;
+}
+
+#results {
+    margin-top: 1rem;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    width: 640px; /* Match webcam width */
+    min-height: 100px;
+}
